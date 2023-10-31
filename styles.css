@@ -1,0 +1,71 @@
+/* Estilos para telas maiores (desktop) */
+.top-bar {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: violet;
+}
+
+.image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 20px;
+    margin-top: 20px;
+}
+
+.produtos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.produtos img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 20px;
+    margin-top: 20px;
+}
+
+.whatsapp-button {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: darkgreen;
+}
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        padding: 5px; /* Reduz o espaçamento da barra superior */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .image img,
+    .produtos img {
+        width: 100%; /* Faz as imagens se ajustarem à largura da tela */
+        height: auto;
+        border-radius: 10px;
+        border: 10px;
+        margin-top: 10px;
+    }
+
+    .whatsapp-button {
+        margin-top: 20px; /* Adiciona espaço extra abaixo do botão do WhatsApp */
+    }
+}
